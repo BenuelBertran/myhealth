@@ -1,0 +1,78 @@
+.features {
+  margin-top: 24px;
+  margin-bottom: 150px;
+  border-top-left-radius: 50% 4%;
+  border-top-right-radius: 50% 4%;
+  
+  text-align: center;
+  
+  background-color: $extra-bg-secondary;
+  background-image: linear-gradient(to bottom, $extra-bg-secondary, $extra-bg-primary);
+
+  &__title {
+    padding-top: 149px;
+    padding-bottom: 147px;
+  }
+  
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  &__item {
+    position: relative;
+    
+    width: 360px;
+    padding-top: 2px;
+    padding-bottom: 170px;
+    &--pills,
+    &--doctor,
+    &--diary,
+    &--measure,
+    &--chat,
+    &--notice {
+      &::before {
+        position: absolute;
+        content: "";
+        top: -95px;
+        left: 140px;
+         
+        width: 80px;
+        height: 80px;
+        
+        background-repeat: no-repeat;
+      }
+    }
+    &--pills {
+      &::before {
+        background-image: url(../images/features-pills.png);
+      }
+    }
+    &--doctor {
+      &::before {
+        background-image: url(../images/features-doctor.png);
+      }
+    }
+    &--diary {
+      &::before {
+        background-image: url(../images/features-diary.png);
+      }
+    }
+    &--measure {
+      &::before {
+        background-image: url(../images/features-measure.png);
+      }
+    }
+    &--chat {
+      &::before {
+        background-image: url(../images/features-chat.png);
+      }
+    }
+    &--notice {
+      &::before {
+        background-image: url(../images/features-notice.png);
+      }
+    }
+  }
+}

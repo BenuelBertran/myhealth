@@ -1,0 +1,85 @@
+//Основа
+.page {
+  min-width: $notebook;
+
+  font-family: "Cera Round Pro", "Arial", sans-serif;
+  font-size: $normal-size;
+  line-height: $normal-height;
+  font-weight: $big-weight;
+  color: $main-text;
+  
+  background-color: $main-bg;
+} 
+
+//Центровщик
+.container {
+  max-width: $notebook;
+  margin: 0 auto;
+}
+
+//Заголовки
+.title {
+  font-size: $bigger-size;
+  line-height: $bigger-height;
+  font-weight: $big-weight;
+}
+
+//Кнопки
+.btn {
+  display: inline-block;
+
+  font-weight: $bigger-weight;
+  color: $main-dark-bg;
+  text-align: center;
+  vertical-align: middle;
+
+  border: none;
+  border-radius: 30px;
+  
+  background-color: $button-bg;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: $button-hover;
+  }
+}
+
+//Поля ввода
+.input {
+  font-family: inherit;
+  font-size: $low-size;
+  font-weight: $low-weight;
+  line-height: $lowest-height;
+  color: $input-text;
+  border: 1px solid $button-border;
+  border-radius: 30px;
+  background-color: $input-bg;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: lighten($button-border, 15%);
+  }
+}
+
+//Выключенный элемент
+.hidden {
+  display: none;
+}
+
+//Визуально скрытый элемент
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}

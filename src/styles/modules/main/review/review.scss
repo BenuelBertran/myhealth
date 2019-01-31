@@ -1,0 +1,85 @@
+.review {
+  padding-bottom: 55px;
+  
+  &__container {
+    display: flex;
+  }
+  
+  &__wrapper {
+    width: 335px;
+    height: 652px;
+    padding-left: 122px;
+    padding-right: 42px;
+  }
+  
+  &__info {
+    position: relative;
+    
+    width: 640px;
+    padding-top: 82px;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -128px;
+      right: -306px;
+      
+      width: 489px;
+      height: 359px;
+      
+      background-image: url("../images/review-puls.png");
+      background-repeat: no-repeat;
+    }
+    
+    @media 
+      (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+        &::after {
+          background-image: url("../images/review-puls@2x.png");
+        }
+    }
+  }
+  
+  &__title {
+    padding-bottom: 17px;
+    
+    color: $main-text;
+  }
+  
+  &__description {
+    padding-bottom: 1px;
+  }
+  
+  &__list {
+    width: 480px;
+    padding-left: 1px;
+    padding-bottom: 37px;
+  }
+  
+  &__item {
+    position: relative;
+    
+    padding-top: 16px;
+    padding-left: 15px;
+    &::before {
+      position: absolute;
+      content: "";
+      
+      top: 27px;
+      left: 0;
+      
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      
+      background-color: $menu-separator;
+    }
+  }
+  
+  &__btn {
+    padding: 20px 35px;
+    
+    font-size: $normal-size;
+    line-height: $lower-height;
+    font-weight: $bigger-weight;
+  }
+}

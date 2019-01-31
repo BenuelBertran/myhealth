@@ -1,0 +1,92 @@
+.diary {
+  position: relative;
+  
+  margin-bottom: 123px;
+  
+  text-align: center;
+  &::after {
+    position: absolute;
+    content: "";
+    top: -498px;
+    left: -330px;
+    z-index: -1;
+    
+    width: $tv;
+    height: 2173px;
+    
+    background-image: url("../images/diary-curve.png");
+    background-repeat: no-repeat;
+  }
+  
+  &__container {
+    position: relative;
+    
+    display: flex;
+  }
+  
+  &__title {
+    padding-bottom: 89px;
+    color: $diary-title;
+  }
+  
+  &__list {
+    width: 600px;
+    padding-left: 60px;
+    
+    text-align: left;
+  }
+  
+  &__item {
+    position: relative;
+    
+    padding-bottom: 78px;
+    box-sizing: border-box;
+    
+    font-size: $big-size;
+    line-height: $big-height;
+    font-weight: $big-weight;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -30px;
+      left: -109px;
+      
+      width: 102px;
+      height: 123px;
+      
+      background-repeat: no-repeat;
+    }
+    &--one {
+      &::before {
+        background-image: url(../images/diary-one.png);    
+      }
+    }
+    &--two {
+      &::before {
+        background-image: url(../images/diary-two.png);    
+      }
+    }
+    &--three {
+      &::before {
+        background-image: url(../images/diary-three.png);
+      }
+    }
+  }
+  
+  &__text {
+    padding-top: 10px;
+    
+    font-size: $normal-size;
+    line-height: $normal-height;
+  }
+  
+  &__wrapper {
+    position: absolute;
+    top: 2px;
+    right: -111px;
+    
+    width: 611px;
+    height: 608px;
+    padding-left: 50px;
+  }
+}

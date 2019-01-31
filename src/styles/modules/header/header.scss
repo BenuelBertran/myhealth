@@ -1,0 +1,109 @@
+.header {
+  margin-bottom: 147px;
+  border-bottom-right-radius: 50% 3%;
+  border-bottom-left-radius: 50% 3%;
+  
+  color: $main-dark-bg;
+  
+  background-image: linear-gradient(to bottom, $header-bg-primary 0%, $header-bg-secondary 150%);
+  background-image: url("../images/header-bg1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  &::after {
+    position: absolute;
+    content: "";
+    top: 220px;
+    left: -328px;
+    z-index: -1;
+    
+    width: 956px;
+    height: 1291px;
+
+    background: url("../images/header-curve.png") no-repeat left bottom 220px;
+  }
+
+  @media 
+    (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../images/header-bg1@2x.png");
+  }
+  
+  &--second {
+    background-image: url("../images/header-bg2.png");
+   
+    @media 
+      (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+        background-image: url("../images/header-bg2@2x.png");
+    }
+  }
+  
+  &__nav {
+    display: flex;
+    margin-bottom: 87px;
+    padding-top: 34px;
+  }
+  
+  &__logo {
+    position: relative;
+    top: -3px;
+    
+    width: 200px;
+    height: 40px;
+  }
+  
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 490px;
+    margin-left: 200px;
+    
+    font-weight: $bigger-weight;
+  }
+  
+  &__item {
+    &:hover,
+    &:focus {
+      opacity: 0.9;
+    }
+    &--current {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 26px;
+        left: 50%;
+        right: 50%;
+        
+        width: 4px;
+        height: 4px;
+        
+        background-color: $main-white;
+        border-radius: 50%;
+      }
+    }
+  }
+  
+  &__link {
+    color: $main-dark-bg;
+  }
+  
+  &__btn {
+    position: relative;
+    top: -16px;
+    left: 68px;
+    
+    padding: 18px 35px;
+    border: solid 2px $header-nav-button;
+    
+    line-height: $lower-height;
+    
+    background-color: transparent;
+    &:hover,
+    &:focus {
+      background-color: $header-nav-button;
+    }
+  }
+}

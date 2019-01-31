@@ -1,0 +1,54 @@
+.extra {
+  background-image: linear-gradient(to bottom, $extra-bg-primary, $extra-bg-secondary);
+  
+  &__container {
+    position: relative;
+    
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 180px;
+  }
+  
+  &__info {
+    width: 603px;
+    padding-left: 60px;
+  }
+  
+  &__title {
+    padding-top: 80px;
+    padding-bottom: 29px;
+  }
+  
+  &__list {
+    padding-left: 18px;
+    padding-right: 5px;
+  }
+  
+  &__item {
+    position: relative;
+    
+    padding-bottom: 16px;
+    &::before {
+      position: absolute;
+      content: "";
+      
+      top: 8px;
+      left: -15px;
+      
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      
+      background-color: $menu-separator;
+    }
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: -84px;
+    left: -380px;
+    
+    width: 905px;
+    height: 640px;
+  }
+}

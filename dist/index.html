@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Моё здоровье</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  </head>
+  <body class="page">
+    <header class="header page__header">
+      <div class="container header__container">
+        <nav class="header__nav"><a class="header__link" href="#">
+            <picture class="header__picture">
+              <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="./images/header-logo@2x.png 2x"><img class="header__logo" src="./images/header-logo.png" alt="Мое здоровье" width="200" height="40">
+            </picture></a>
+          <ul class="header__list">
+            <li class="header__item"><a class="header__link" href="#">О сервисе</a></li>
+            <li class="header__item"><a class="header__link" href="#">Функции</a></li>
+            <li class="header__item header__item--current"><a class="header__link" href="#">Возможности</a></li>
+            <li class="header__item"><a class="header__link" href="#">Партнеры</a></li>
+          </ul><a class="btn header__btn" href="#">Оставить заявку</a>
+        </nav>
+        <section class="slider header__section">
+          <div class="slider__item slider__item--first">
+            <h2 class="title slider__title slider__title--first">Расширяем возможности предоставления качественных медицинских услуг</h2>
+            <p class="slider__description slider__description--first">«Дневник здоровья» – новый сервис для самоконтроля показателей состояния здоровья, разработанный для участников программы «Мое здоровье».</p><a class="btn slider__btn" href="#">Узнать больше</a>
+          </div>
+          <div class="slider__item slider__item--second hidden">
+            <h2 class="title slider__title slider__title--second">Следить за здоровьем станет </h2>
+            <p class="slider__description slider__description--second">Скоро вы сможете находиться на связи со своим лечащим врачом независимо от своего местоположения, вести дневник мониторинга самочувствия, получать рекомендации по плану лечения и многое другое.</p><a class="btn slider__btn" href="#">Узнать больше</a>
+          </div>
+          <div class="slider__wrapper">
+            <button class="slider__toggle slider__toggle--left slider__toggle--active" aria-label="Переключиться на первый слайд"></button>
+            <button class="slider__toggle slider__toggle--right" aria-label="Переключиться на второй слайд"></button>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main class="main page__main">
+      <h1 class="main__title visually-hidden">Возможности программы</h1>
+      <section class="review main__section">
+        <div class="container review__container">
+          <div class="review__wrapper">
+            <picture class="review__picture">
+              <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="./images/mobile@2x.png 2x"><img class="review__image" src="./images/mobile.png" width="335" height="652" alt="Приложение Дневник здоровья на мобильном телефоне">
+            </picture>
+          </div>
+          <div class="review__info">
+            <h2 class="title review__title">Что такое «Дневник здоровья»?</h2>
+            <p class="review__description">Дневник пациента — это удобный онлайн-сервис:</p>
+            <ul class="review__list">
+              <li class="review__item">Вносите результаты измерений вручную или с помощью интегрированных приборов</li>
+              <li class="review__item">Ведите персональную медицинскую карту с историей ваших измерений </li>
+              <li class="review__item">Делитесь результатами измерений со специалистами<br>для повышения эффективности лечения</li>
+              <li class="review__item">Получайте рекомендации, созданные специально для вас</li>
+            </ul><a class="btn review__btn" href="#">Оставить заявку</a>
+          </div>
+        </div>
+      </section>
+      <section class="features main__section">
+        <div class="container features__container">
+          <h2 class="title features__title">Функции приложения</h2>
+          <ul class="features__list">
+            <li class="features__item features__item--pills">Планирование графика<br>приема лекарств</li>
+            <li class="features__item features__item--doctor">Уведомление врача<br>об исполнении назначений </li>
+            <li class="features__item features__item--diary">Ведение дневника<br>самочувствия</li>
+            <li class="features__item features__item--measure">Удаленное предоставление<br>измерений врачу</li>
+            <li class="features__item features__item--chat">Общение с врачами<br>через встроенный мессенджер</li>
+            <li class="features__item features__item--notice">Получение уведомлений<br>для выполнения назначений</li>
+          </ul>
+        </div>
+      </section>
+      <section class="diary main__section">
+        <h2 class="title diary__title">Ведите персональный дневник мониторинга здоровья</h2>
+        <div class="container diary__container">
+          <ul class="diary__list">
+            <li class="diary__item diary__item--one">Хранение данных
+              <p class="diary__text">Контролируйте и следите за динамикой изменения показателей вашего здоровья. Вносите результаты измерений медицинских показателей вручную или с помощью интегрированных приборов, храните историю измерений и отслеживайте динамику состояния здоровья</p>
+            </li>
+            <li class="diary__item diary__item--two">Сообшение информации врачу
+              <p class="diary__text">Позвольте специалисту дистанционно следить за вашим здоровьем.<br> Будьте на связи со специалистом &ndash; отправляйте информацию о своем самочувствии, обменивайтесь сообщениями и получайте<br>рекомендации по вашему здоровью и лечению.</p>
+            </li>
+            <li class="diary__item diary__item--three">Напоминание о важном
+              <p class="diary__text">Получайте рекомендации, созданные специально для вас.<br> Система, персонально настроенная под ваши требования,<br> автоматически напомнит о необходимости выполнить рекомендации медицинского специалиста: принять препарат или выполнить<br>измерения.</p>
+            </li>
+          </ul>
+          <div class="diary__wrapper">
+            <picture class="diary__picture">
+              <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="./images/phones@2x.png 2x"><img class="diary__image" src="./images/phones.png" width="611" height="608" alt="Три мобильных телефона, отображающих разделы с данными, сообщениями и напоминаниями">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="extra main__section">
+        <div class="container extra__container">
+          <div class="extra__wrapper">
+            <picture class="extra__picture">
+              <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="./images/stat@2x.png 2x"><img class="extra__image" src="./images/stat.png" width="905" height="640" alt="Приложение Дневник здоровья на мобильном телефоне">
+            </picture>
+          </div>
+          <div class="extra__info">
+            <h2 class="title extra__title">Специалистам</h2>
+            <ul class="extra__list">
+              <li class="extra__item">Дистанционный контроль состояния здоровья ваших пациентов</li>
+              <li class="extra__item">Наблюдение за динамикой изменения основных<br>медицинских показателей </li>
+              <li class="extra__item">Наличие алгоритмов автоматического анализа<br>поступающей информации</li>
+              <li class="extra__item">Индивидуальная система уведомлений об изменении<br>состояния каждого пациента</li>
+              <li class="extra__item">Дополнительный сервис коммуникации, позволяющий активно вовлекать пациента в процесс профилактики, лечения и реабилитации</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="request main__section">
+        <div class="container request__container">
+          <h2 class="title request__title">Получите бесплатный доступ к «Дневнику здоровья»</h2>
+          <p class="request__description">Оставьте свою электронную почту<br>и вы узнаете о запуске данного сервиса первым!</p>
+          <form class="request__form" action="#" method="post">
+            <input class="input request__input request__input--email" type="email" name="email" placeholder="Ваш E-mail" autofocus>
+            <button class="btn request__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer page__footer">
+      <div class="container footer__container">
+        <nav class="footer__nav"><a class="footer__link" href="#">
+            <picture class="footer__picture">
+              <source media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="./images/footer-logo@2x.png 2x"><img class="footer__logo" src="./images/footer-logo.png" width="160" height="17" alt="Логотип компании Моё здоровье">
+            </picture></a>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">О сервисе</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Функции</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Возможности</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Специалистам</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">88005004549</a></li>
+          </ul>
+        </nav>
+        <div class="footer__copyright">
+          <p class="footer__text">Разработка сайта</p><a class="footer__link footer__link--pink" href="https://redsoft.ru/">Redsoft</a>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/slider.js"></script>
+  </body>
+</html>

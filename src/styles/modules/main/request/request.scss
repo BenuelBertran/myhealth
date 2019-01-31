@@ -1,0 +1,44 @@
+.request {
+  padding-top: 101px;
+  padding-bottom: 160px;
+  
+  text-align: center;
+  
+  background-color: $request-bg-primary;
+  background-image: linear-gradient(to bottom, $request-bg-primary, $request-bg-secondary);
+  
+  &__title {
+    padding-top: 40px;
+    padding-bottom: 39px;
+  }
+  
+  &__description {
+    width: 640px;
+    margin: 0 auto;
+    padding-bottom: 55px;
+    
+    font-size: $big-size;
+    line-height: $big-height;
+  }
+  
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    width: 560px;
+    margin: 0 auto;
+  }
+  
+  &__input {
+    width: 321px;
+    padding: 21px 18px;
+  }
+  
+  &__btn {
+    width: 160px;
+    padding: 21px 18px;
+    
+    font-weight: $bigger-weight;
+    font-size: $normal-size;
+    line-height: $lowest-height;
+  }
+}

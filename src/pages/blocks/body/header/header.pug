@@ -1,0 +1,18 @@
+header(class="header page__header")
+  div(class="container header__container")
+    nav(class="header__nav")
+      a(class="header__link" href="#")
+        picture(class="header__picture")
+          source(media="(min-resolution: 144dpi), (min-resolution: 1.5dppx)" srcset="./images/header-logo@2x.png 2x")
+          img(class="header__logo" src="./images/header-logo.png" alt="Мое здоровье" width="200" height="40")
+      ul(class="header__list")
+        li(class="header__item")
+          a(class="header__link" href="#") О сервисе
+        li(class="header__item")
+          a(class="header__link" href="#") Функции
+        li(class="header__item header__item--current")
+          a(class="header__link" href="#") Возможности
+        li(class="header__item")
+          a(class="header__link" href="#") Партнеры
+      a(class="btn header__btn" href="#") Оставить заявку
+    include slider/slider
